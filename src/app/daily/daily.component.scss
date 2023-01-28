@@ -1,0 +1,487 @@
+.contain {
+  background-color: var(--veryDarkBlue);
+  height: 100%;
+  margin: auto;
+
+  .dashboard {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding-top: 200px;
+    .profile {
+      background-color: var(--darkBlue);
+      border-radius: 15px;
+      width: 240px;
+      height: 455px;
+
+      .user {
+        border-radius: 15px;
+        background-color: var(--blue);
+        padding: 35px 30px 35px 30px;
+        .imageUser {
+          display: flex;
+          img {
+            width: 65px;
+            border-color: white;
+            border-style: solid;
+            border-radius: 50%;
+          }
+        }
+        .info {
+          font-family: "Rubik", sans-serif;
+          color: white;
+          font-weight: 300;
+          .report {
+            font-size: 13px;
+            margin: 40px 0 5px;
+            color: rgb(216, 216, 216);
+          }
+          .userName {
+            font-size: 40px;
+            margin: 0 0 25px 0;
+            line-height: 45px;
+          }
+        }
+      }
+      .filters {
+        padding: 25px 30px 10px 30px;
+        color: var(--paleBlue);
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        .daily {
+          color: white;
+        }
+        p {
+          &:hover {
+            color: white;
+            font-size: 14.2px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .tasks {
+      margin-left: 10px;
+      width: 670px;
+      height: 460px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 0;
+      img {
+        display: none !important;
+      }
+      .work {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--lightRedWork);
+        background-image: url("/assets/images/icon-work.png");
+        background-position-y: -14px;
+        background-position-x: 100px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -10px 125px;
+        }
+
+        .infoWork {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: hsl(235, 46%, 30%);
+          }
+          .headerWork {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              align-items: center;
+              margin-top: 12px;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeWork {
+            font-size: 45px;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+          .lastWork {
+            font-size: 13px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .play {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--SoftBlue);
+        background-image: url("/assets/images/icon-play.png");
+        background-position-y: -8px;
+        background-position-x: 110px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -10px 125px;
+        }
+
+        .infoPlay {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: hsl(235, 46%, 30%)
+          }
+          .headerPlay {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              align-items: center;
+              margin-top: 12px;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timePlay {
+            font-size: 45px;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+          .lastPlay {
+            font-size: 13px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .study {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--lightRed);
+        background-image: url("/assets/images/icon-study.png");
+        background-position-y: -14px;
+        background-position-x: 100px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -10px 125px;
+        }
+
+        .infoStudy {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: hsl(235, 46%, 30%)
+          }
+          .headerStudy {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              align-items: center;
+              margin-top: 12px;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeStudy {
+            font-size: 45px;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+          .lastStudy {
+            font-size: 13px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .exercise {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--limeGreen);
+        background-image: url("/assets/images/icon-exercise.png");
+        background-position-y: -4px;
+        background-position-x: 105px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -7px 125px;
+        }
+
+        .infoExercise {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: hsl(235, 46%, 30%)
+          }
+          .headerExercise {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              align-items: center;
+              margin-top: 12px;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeExercise {
+            font-size: 45px;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+          .lastExercise {
+            font-size: 13px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .social {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--violet);
+        background-image: url("/assets/images/icon-social.png");
+        background-position-y: -17px;
+        background-position-x: 110px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -15px 125px;
+        }
+
+        .infoSocial {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: hsl(235, 46%, 30%)
+          }
+          .headerSocial {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              align-items: center;
+              margin-top: 12px;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeSocial {
+            font-size: 45px;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+          .lastSocial {
+            font-size: 13px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .selfCare {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--softOrange);
+        background-image: url("/assets/images/icon-self-care.png");
+        background-position-y: -14px;
+        background-position-x: 120px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -12px 125px;
+        }
+
+        .infoSelfCare {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: hsl(235, 46%, 30%)
+          }
+          .headerSelfCare {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              align-items: center;
+              margin-top: 12px;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeSelfCare {
+            font-size: 45px;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+          .lastSelfCare {
+            font-size: 13px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1023px){
+ .dashboard{
+  flex-direction: column;
+  padding: 50px  0 !important;
+  margin: auto !important;
+  width: 95% !important;
+  .profile{
+    width: 100% !important;
+    height: fit-content !important;
+    .user{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0 !important;
+      .imageUser{
+        margin: 0 15px;
+      }
+      .info{
+        margin: -10px 0 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .filters{
+      width: 50%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .tasks{
+    display: flex;
+    height: auto !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    gap: 0 !important;
+    .work{
+      width: 100% !important;
+      margin: 0 0 30px 0 !important;
+      .infoWork{
+        .timeWork{
+          display: flex;
+        }
+      }
+    }
+  }
+ }
+
+}

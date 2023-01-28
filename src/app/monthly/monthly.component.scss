@@ -1,0 +1,420 @@
+.contain {
+  background-color: var(--veryDarkBlue);
+  height: 100%;
+  margin: auto;
+
+  .dashboard {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding-top: 200px;
+    .profile {
+      background-color: var(--darkBlue);
+      border-radius: 15px;
+      width: 240px;
+      height: 440px;
+
+      .user {
+        border-radius: 15px;
+        background-color: var(--blue);
+        padding: 35px 30px 35px 30px;
+        .imageUser {
+          display: flex;
+          img {
+            width: 65px;
+            border-color: white;
+            border-style: solid;
+            border-radius: 50%;
+          }
+        }
+        .info {
+          font-family: "Rubik", sans-serif;
+          color: white;
+          font-weight: 300;
+          .report {
+            font-size: 13px;
+            margin: 40px 0 5px;
+            color: rgb(216, 216, 216);
+          }
+          .userName {
+            font-size: 40px;
+            margin: 0 0 25px 0;
+            line-height: 45px;
+          }
+        }
+      }
+      .filters {
+        padding: 15px 30px 10px 30px;
+        color: var(--paleBlue);
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        .monthly{
+          color: white;
+        }
+        p {
+          &:hover {
+            color: white;
+            font-size: 14.2px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .tasks {
+      margin-left: 10px;
+      width: 660px;
+      height: 460px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        display: none !important;
+      }
+      .work {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--lightRedWork);
+        background-image: url("/assets/images/icon-work.png");
+        background-position-y: -14px;
+        background-position-x: 100px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -10px 125px;
+        }
+
+        .infoWork {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryDarkBlue);
+          }
+          .headerWork {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeWork {
+            font-size: 40px;
+            font-weight: 300;
+            margin: 10px 0;
+          }
+          .lastWork {
+            font-size: 12px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .play {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--SoftBlue);
+        background-image: url("/assets/images/icon-play.png");
+        background-position-y: -8px;
+        background-position-x: 110px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -10px 125px;
+        }
+
+        .infoPlay {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryDarkBlue);
+          }
+          .headerPlay {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timePlay {
+            font-size: 40px;
+            font-weight: 300;
+            margin: 10px 0;
+          }
+          .lastPlay {
+            font-size: 12px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .study {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--lightRed);
+        background-image: url("/assets/images/icon-study.png");
+        background-position-y: -14px;
+        background-position-x: 100px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -10px 125px;
+        }
+
+        .infoStudy {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryDarkBlue);
+          }
+          .headerStudy {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeStudy {
+            font-size: 40px;
+            font-weight: 300;
+            margin: 10px 0;
+          }
+          .lastStudy {
+            font-size: 12px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .exercise {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--limeGreen);
+        background-image: url("/assets/images/icon-exercise.png");
+        background-position-y: -4px;
+        background-position-x: 105px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -7px 125px;
+        }
+
+        .infoExercise {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryDarkBlue);
+          }
+          .headerExercise {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeExercise {
+            font-size: 40px;
+            font-weight: 300;
+            margin: 10px 0;
+          }
+          .lastExercise {
+            font-size: 12px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .social {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--violet);
+        background-image: url("/assets/images/icon-social.png");
+        background-position-y: -17px;
+        background-position-x: 110px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -15px 125px;
+        }
+
+        .infoSocial {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryDarkBlue);
+          }
+          .headerSocial {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeSocial {
+            font-size: 40px;
+            font-weight: 300;
+            margin: 10px 0;
+          }
+          .lastSocial {
+            font-size: 12px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+
+      .selfCare {
+        font-family: "Rubik", sans-serif;
+        width: 200px;
+        height: 200px;
+        background-color: var(--softOrange);
+        background-image: url("/assets/images/icon-self-care.png");
+        background-position-y: -14px;
+        background-position-x: 120px;
+        background-repeat: no-repeat;
+        width: 200px;
+        margin: 0 10px 0 10px;
+        border-radius: 15px;
+
+        img {
+          display: relative;
+          width: 60px;
+          margin: -12px 125px;
+        }
+
+        .infoSelfCare {
+          height: 150px;
+          margin: 40px 0 !important;
+          border-radius: 15px;
+          background-color: var(--darkBlue);
+          padding: 10px 20px;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--veryDarkBlue);
+          }
+          .headerSelfCare {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+            button {
+              color: white;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              padding: 0;
+            }
+          }
+          .timeSelfCare {
+            font-size: 40px;
+            font-weight: 300;
+            margin: 10px 0;
+          }
+          .lastSelfCare {
+            font-size: 12px;
+            color: rgb(216, 216, 216);
+          }
+        }
+      }
+    }
+  }
+}
