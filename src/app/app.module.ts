@@ -9,7 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { DailyComponent } from './daily/daily.component';
 import { MonthlyComponent } from './monthly/monthly.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -21,13 +21,15 @@ import { MonthlyComponent } from './monthly/monthly.component';
     MonthlyComponent,
 
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,9 +11,9 @@
         </section>
       </section>
       <section class="filters">
-        <p class="daily" routerLink="/daily">Daily</p>
-        <p class="weekly" routerLink="weekly">Weekly</p>
-        <p class="monthly" routerLink="/monthly">Monthly</p>
+        <p class="daily" (click)="exibirConteudo('Daily')">Daily</p>
+        <p class="weekly"(click)="exibirConteudo('Weekly')">Weekly</p>
+        <p class="monthly" (click)="exibirConteudo('Monthly')">Monthly</p>
       </section>
     </div>
     <div class="tasks">
@@ -27,8 +27,12 @@
               <mat-icon>more_horiz</mat-icon>
             </button>
           </div>
-          <p class="timeWork">32hrs</p>
-          <p class="lastWork">Last Week - 36hrs</p>
+          <p class="timeWork" *ngIf="daily">{{profileData[0].timeframes.daily.current}}hrs</p>
+          <p class="timeWork"*ngIf="weekly">{{profileData[0].timeframes.weekly.current}}hrs</p>
+          <p class="timeWork"*ngIf="monthly">{{profileData[0].timeframes.monthly.current}}hrs</p>
+          <p class="lastWork"*ngIf="daily">Last Week - {{profileData[0].timeframes.daily.previous}}hrs</p>
+          <p class="lastWork"*ngIf="weekly">Last Week - {{profileData[0].timeframes.weekly.previous}}hrs</p>
+          <p class="lastWork"*ngIf="monthly">Last Week - {{profileData[0].timeframes.monthly.previous}}hrs</p>
         </div>
       </div>
 
@@ -43,8 +47,12 @@
               <mat-icon>more_horiz</mat-icon>
             </button>
           </div>
-          <p class="timePlay">10hrs</p>
-          <p class="lastPlay">Last Week - 8hrs</p>
+          <p class="timePlay" *ngIf="daily">{{profileData[1].timeframes.daily.current}}hrs</p>
+          <p class="timePlay"*ngIf="weekly">{{profileData[1].timeframes.weekly.current}}hrs</p>
+          <p class="timePlay"*ngIf="monthly">{{profileData[1].timeframes.monthly.current}}hrs</p>
+          <p class="lastPlay"*ngIf="daily">Last Week - {{profileData[1].timeframes.daily.previous}}hrs</p>
+          <p class="lastPlay"*ngIf="weekly">Last Week - {{profileData[1].timeframes.weekly.previous}}hrs</p>
+          <p class="lastPlay"*ngIf="monthly">Last Week - {{profileData[1].timeframes.monthly.previous}}hrs</p>
         </div>
       </div>
 
@@ -59,8 +67,12 @@
               <mat-icon>more_horiz</mat-icon>
             </button>
           </div>
-          <p class="timeStudy">4hrs</p>
-          <p class="lastStudy">Last Week - 7hrs</p>
+          <p class="timeStudy" *ngIf="daily">{{profileData[2].timeframes.daily.current}}hrs</p>
+          <p class="timeStudy"*ngIf="weekly">{{profileData[2].timeframes.weekly.current}}hrs</p>
+          <p class="timeStudy"*ngIf="monthly">{{profileData[2].timeframes.monthly.current}}hrs</p>
+          <p class="lastStudy"*ngIf="daily">Last Week - {{profileData[2].timeframes.daily.previous}}hrs</p>
+          <p class="lastStudy"*ngIf="weekly">Last Week - {{profileData[2].timeframes.weekly.previous}}hrs</p>
+          <p class="lastStudy"*ngIf="monthly">Last Week - {{profileData[2].timeframes.monthly.previous}}hrs</p>
         </div>
       </div>
 
@@ -75,8 +87,12 @@
               <mat-icon>more_horiz</mat-icon>
             </button>
           </div>
-          <p class="timeExercise">4hrs</p>
-          <p class="lastExercise">Last Week - 5hrs</p>
+          <p class="timeExercise" *ngIf="daily">{{profileData[3].timeframes.daily.current}}hrs</p>
+          <p class="timeExercise"*ngIf="weekly">{{profileData[3].timeframes.weekly.current}}hrs</p>
+          <p class="timeExercise"*ngIf="monthly">{{profileData[3].timeframes.monthly.current}}hrs</p>
+          <p class="lastExercise"*ngIf="daily">Last Week - {{profileData[3].timeframes.daily.previous}}hrs</p>
+          <p class="lastExercise"*ngIf="weekly">Last Week - {{profileData[3].timeframes.weekly.previous}}hrs</p>
+          <p class="lastExercise"*ngIf="monthly">Last Week - {{profileData[3].timeframes.monthly.previous}}hrs</p>
         </div>
       </div>
 
@@ -91,8 +107,12 @@
               <mat-icon>more_horiz</mat-icon>
             </button>
           </div>
-          <p class="timeSocial">5hrs</p>
-          <p class="lastSocial">Last Week - 10hrs</p>
+          <p class="timeSocial" *ngIf="daily">{{profileData[4].timeframes.daily.current}}hrs</p>
+          <p class="timeSocial"*ngIf="weekly">{{profileData[4].timeframes.weekly.current}}hrs</p>
+          <p class="timeSocial"*ngIf="monthly">{{profileData[4].timeframes.monthly.current}}hrs</p>
+          <p class="lastSocial"*ngIf="daily">Last Week - {{profileData[4].timeframes.daily.previous}}hrs</p>
+          <p class="lastSocial"*ngIf="weekly">Last Week - {{profileData[4].timeframes.weekly.previous}}hrs</p>
+          <p class="lastSocial"*ngIf="monthly">Last Week - {{profileData[4].timeframes.monthly.previous}}hrs</p>
         </div>
       </div>
 
@@ -107,8 +127,12 @@
               <mat-icon>more_horiz</mat-icon>
             </button>
           </div>
-          <p class="timeSelfCare">2hrs</p>
-          <p class="lastSelfCare">Last Week - 2hrs</p>
+          <p class="timeSelfCare" *ngIf="daily">{{profileData[5].timeframes.daily.current}}hrs</p>
+          <p class="timeSelfCare"*ngIf="weekly">{{profileData[5].timeframes.weekly.current}}hrs</p>
+          <p class="timeSelfCare"*ngIf="monthly">{{profileData[5].timeframes.monthly.current}}hrs</p>
+          <p class="lastSelfCare"*ngIf="daily">Last Week - {{profileData[5].timeframes.daily.previous}}hrs</p>
+          <p class="lastSelfCare"*ngIf="weekly">Last Week - {{profileData[5].timeframes.weekly.previous}}hrs</p>
+          <p class="lastSelfCare"*ngIf="monthly">Last Week - {{profileData[5].timeframes.monthly.previous}}hrs</p>
         </div>
       </div>
     </div>

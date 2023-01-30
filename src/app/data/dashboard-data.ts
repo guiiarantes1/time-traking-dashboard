@@ -1,27 +1,25 @@
-export type Dashboard = Dashboard2[]
-
-export interface Dashboard2 {
-  title: string
-  timeframes: Timeframes
-}
-
 export interface Timeframes {
-  daily: Daily
-  weekly: Weekly
-  monthly: Monthly
+  daily: {
+    current: number;
+    previous: number;
+  };
+  weekly: {
+    current: number;
+    previous: number;
+  };
+  monthly: {
+    current: number;
+    previous: number;
+  };
 }
 
-export interface Daily {
-  current: number
-  previous: number
+export interface Activity {
+  title: string;
+  timeframes: Timeframes;
 }
 
-export interface Weekly {
-  current: number
-  previous: number
-}
-
-export interface Monthly {
-  current: number
-  previous: number
+export async function consumeData(): Promise<Activity[]> {
+  const data = await fetch('data.json');
+  const jsonData = await data.json();
+  return jsonData;
 }
